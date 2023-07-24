@@ -5,7 +5,8 @@ const app = express();
 const port = 3333
 
 app.use(express.json())
-import router from "./router"
+
+import {router} from "./router"
 
 app.use(router)
 
