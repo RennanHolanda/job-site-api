@@ -10,8 +10,7 @@ import cors from 'cors';
 dotenv.config();
 app.use(express.json())
 
-app.use(cors({ origin: ['http://localhost:3000', 'https://jobdeploy-api.onrender.com'] }))
-
+app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
 
 app.use(router)
 
