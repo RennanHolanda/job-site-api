@@ -10,7 +10,7 @@ import cors from 'cors';
 dotenv.config();
 app.use(express.json())
 
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(cors({ credentials: true, origin: ["http://localhost:5173", "https://jobs-finder-two.vercel.app/"] }));
 
 app.use(router)
 
